@@ -112,9 +112,102 @@ img {
     height: 105px;
 }
 
+#head,
+#updates,
+#game {
+    display: none;
+}
 
 #opacityD,
+#result {}
+
+#opacityD {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 10;
+}
+
 #result {
-    display: none;
+    z-index: 10;
+    position: fixed;
+    width: 500px;
+    height: auto;
+    border: 2px solid #511519;
+    border-radius: 7px;
+
+}
+
+#popBody {
+    background-color: white;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px 2px 0px 2px;
+    border-color: #511519;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+#imgDiv {
+    position: relative;
+    width: 100px;
+    height: 107px;
+    margin: 20px auto;
+    top: 10px;
+}
+
+#imgDiv img {
+    width: 100px;
+    height: 107px;
+}
+
+#h1Res {
+    margin: 0px 12px 12px 12px;
+    font-family: cursive;
+    text-align: center;
+    color: #4d0000;
+}
+
+#pRes {
+    color: #4d0000;
+    text-align: center;
+    font-size: 20px;
+}
+
+#popOkey {
+    height: 100px;
+    background-color: #cf4a53;
+    padding: 25px;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-color: #511519;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#okayButton {
+    height: 50px;
+    width: 95px;
+    margin: 0px auto;
+}
+
+#okayButton button {
+    height: 50px;
+    width: 95px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #4d0000;
+    color: white;
+    box-shadow: 0px 2px 2px 0.5px rgba(0,0,0,0.5);
+    border: white;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+
 
 }
