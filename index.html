@@ -8,15 +8,15 @@
 		<link rel="stylesheet" href="assets/index.css">
 	</head>
 	<body>
-		<header id="head">
+		<header id="title">
 			<h1 id="h1">Memory Game</h1>
 		</header>
-		<div id="updates">
+		<div id="display">
 			<div id="timer">00:00</div>
 			<div id="score">Score: 0</div>
-			<button id="new">New Game</button>
+			<button id="start">New Game</button>
 		</div>
-		<div id="game">
+		<div id="gameboard">
 			<div class="cards" id="card1">
 				<div class="back" id="back1"><img src="assets/images/bridge.jpg"></div>
 				<div class="front" id="front1">?</div>
@@ -98,15 +98,15 @@
 				<div class="front" id="front20">?</div>
 			</div>
 		</div>
-		<div id="opacityD"></div>
-		<div id="result">
-			<div id="popBody">
-				<div id="imgDiv"><img src="./assets/images/won-congratulations.jpg"></div>
-				<h2 id="h1Res">Congratulations!</h2>
-				<p id="pRes">You've scored 5/10 in 60 seconds</p>
+		<div id="transparency"></div>
+		<div id="outcome">
+			<div id="award">
+				<div id="art"><img src="./assets/images/won-congratulations.jpg"></div>
+				<h2 id="winFrase">Congratulations!</h2>
+				<p id="result">You've scored 5/10 in 60 seconds</p>
 			</div>
-			<div id="popOkay">
-				<div id="okayButton"><button>Great!</button></div>
+			<div id="final">
+				<div id="finalButton"><button>Great!</button></div>
 			</div>
 		</div>
 		<script src="image.js"></script>

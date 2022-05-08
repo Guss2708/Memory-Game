@@ -21,7 +21,7 @@ h1 {
 
 }
 
-#updates {
+#display {
     float: riight;
     font-size: 40px;
     margin: 100px 130px 100px 100px;
@@ -42,7 +42,7 @@ h1 {
     text-shadow: 1.5px 1.5px 1px rgba(255, 255, 255, 0.5);
 }
 
-#new {
+#start {
     background-color: #e6e6e6;
     margin: 16px;
     font-size: 40px;
@@ -52,12 +52,12 @@ h1 {
     box-shadow: 2px 2px 1px 0px rgba(119, 116, 115, 1);
 }
 
-#new:hover {
+#start:hover {
     cursor: pointer;
     background-color: #cccc;
 }
 
-#game {
+#playarea {
     float: left;
     width: 775px;
     height: auto;
@@ -112,16 +112,16 @@ img {
     height: 105px;
 }
 
-#head,
-#updates,
-#game {
+#title,
+#display,
+#playarea {
     display: none;
 }
 
-#opacityD,
-#result {}
+#transparency,
+#outcome {}
 
-#opacityD {
+#transparency {
     position: fixed;
     top: 0;
     left: 0;
@@ -132,7 +132,7 @@ img {
     z-index: 10;
 }
 
-#result {
+#outcome{
     z-index: 10;
     position: fixed;
     width: 500px;
@@ -142,7 +142,7 @@ img {
 
 }
 
-#popBody {
+#award {
     background-color: white;
     height: 250px;
     border-style: solid;
@@ -152,7 +152,7 @@ img {
     border-top-left-radius: 7px;
 }
 
-#imgDiv {
+#art {
     position: relative;
     width: 100px;
     height: 107px;
@@ -160,25 +160,25 @@ img {
     top: 10px;
 }
 
-#imgDiv img {
+#art img {
     width: 100px;
     height: 107px;
 }
 
-#h1Res {
+#winFrase {
     margin: 0px 12px 12px 12px;
     font-family: cursive;
     text-align: center;
     color: #4d0000;
 }
 
-#pRes {
+#result {
     color: #4d0000;
     text-align: center;
     font-size: 20px;
 }
 
-#popOkey {
+#final {
     height: 100px;
     background-color: #cf4a53;
     padding: 25px;
@@ -189,13 +189,13 @@ img {
     border-bottom-right-radius: 2px;
 }
 
-#okayButton {
+#finalButton {
     height: 50px;
     width: 95px;
     margin: 0px auto;
 }
 
-#okayButton button {
+#finalButton button {
     height: 50px;
     width: 95px;
     text-align: center;
