@@ -1,8 +1,6 @@
 # Memory Game 
  
-
-
-<p> The aim in this project is to challenge the players memory. The layout of the game is simple and the comands are intuitive. The background image and the pictures in the game cards are part of the same theme. There is a painel that display time and score in order to make the game more informative.
+ - The aim in this project is to challenge the players memory. The layout of the game is simple and the comands are intuitive. The background image and the pictures in the game cards are part of the same theme. There is a painel that display time and score in order to make the game more informative.
 
 
 ## Features 
@@ -46,19 +44,35 @@
 
 ### HTML
  - No errors were returned when passing through the official W3C validator.
+
+ ![screenshot](./assets/readme-img/w3%20htmlvalid.png)
+ 
 ### CSS
  - No errors were found when passing through the official (Jigsaw) validator.
+
+ ![screenshot](./assets/readme-img/css-validator.png)
+
 ### JavaScript
  - No errors were found when passing through the official Jshint validator
- - The following metrics were returned:
- - There are 11 functions in this file.
- - Function with the largest signature takes 2 arguments, while the median is 0.
- - Largest function has 10 statements in it, while the median is 3.
- - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+##### The following metrics were returned:
+
+ - There are 12 functions in this file.
+
+ - Function with the largest signature take 1 arguments, while the median is 0.
+
+- Largest function has 27 statements in it, while the median is 3.5.
+
+- The most complex function has a cyclomatic complexity value of 9 while the median is 1.
+
+
+ ### Lighthouse Checker
+
+ ![screenshot](./assets/readme-img/Lighthouse.png)
+ 
+
 
 ## Unfixed Bugs
-  <p>You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
-</p>
+  - No unfixed bugs
 
 ## Deployment
 This project was deployed using GitHub pages.
