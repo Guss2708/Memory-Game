@@ -1,108 +1,114 @@
-! Memory Game
+# Memory Game 
+ 
+
+
+<p> The aim in this project is to challenge the players memory. The layout of the game is simple and the comands are intuitive. The background image and the pictures in the game cards are part of the same theme. There is a painel that display time and score in order to make the game more informative.
+
+
+## Features 
+
+### Existing Features
+
+ > The Memory game Logo and Heading
+
+ ![screenshot](./assets/readme-img/logo.png)
+
+ > The Game Area
+  - This section will allow the user to click on the cards and flip them and revels what image its behing the card. The gamer will have choose two cards and if they are not the same they will flip back imediately. given the game a option to chose other cards.
+
+ ![screenshot](./assets/readme-img/game-area.png)
+
+ >  The game painel
+ - This section will allow the user to see the time remaining for the game finish, the score obtained when the time finshes and the restart button. 
+
+ ![screenshot](./assets/readme-img/game-painel.png)
+
+ > The win pop-up box
+ - The win pop-up box will only appers if the gamer manges to gather 10 matching cards under 60 seconds. 
+
+ ![screenshot](./assets/readme-img/pop-win.png)
+
+  > The lose pop-up box
+   - The lose pop-up box will only appers after 60 seconds when the gamer did not acomplish the 10 cards matching.
+
+  ![screenshot](./assets/readme-img/pop-lose.png)
+
+   > The footer section
+
+![screenshot](./assets/readme-img/social-media.png)
 
 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features Left to Implement
+ - One the features that I would like to have had implemented were a record of previous scores and time. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Validator Testing
 
-## Gitpod Reminders
+### HTML
+ - No errors were returned when passing through the official W3C validator.
+### CSS
+ - No errors were found when passing through the official (Jigsaw) validator.
+### JavaScript
+ - No errors were found when passing through the official Jshint validator
+ - The following metrics were returned:
+ - There are 11 functions in this file.
+ - Function with the largest signature takes 2 arguments, while the median is 0.
+ - Largest function has 10 statements in it, while the median is 3.
+ - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Unfixed Bugs
+  <p>You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+</p>
 
-`python3 -m http.server`
+## Deployment
+This project was deployed using GitHub pages.
+The procedure for doing this is very straight forward.
 
-A blue button should appear to click: _Make Public_,
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+ * In the GitHub repository, navigate to the Settings tab
+ * From the source section drop-down menu, select the Master Branch
+ * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-Another blue button should appear to click: _Open Browser_.
+The live link can be found here - 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Credits
 
-A blue button should appear to click: _Make Public_,
+- Content 
+* The idea of the game was 
+*
+*
 
-Another blue button should appear to click: _Open Browser_.
+- Media
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* All images were gathered from Picsum
+* [Pic-Sum Photos](https://picsum.photos/)
 
-To log into the Heroku toolbelt CLI:
+## Technologies Used 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- [HTML](https://devdocs.io/html/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+- [GitHub](https://github.com/)
+- [GitPod](https://www.gitpod.io/docs/)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [FontAwesome](https://fontawesome.com/docs)
+- [Google fonts](https://fonts.google.com/)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Resources
 
-------
+- [Code Institute Curriculum](https://codeinstitute.net/ie/)
+- [YouTube](https://www.youtube.com/)
+- [Udemy](https://www.udemy.com/)
+- [FreeCodeCamp](https://www.freecodecamp.org/)
+- [W3Schools.com](https://www.w3schools.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
 ---
 
-Happy coding!
+
+## Acknowledgements
+I would like to thank my mentor Chris Quinn and my friend Ishan Sethy. The support they gave me were essencial for the development of this project. I also relied on the chat groups of the Slack community of Code Institute and lots You Tube. 
+In conclusion Javascript open my eyes despite the dificult to understand it at first, but eventually start to function in it. 
+
+
