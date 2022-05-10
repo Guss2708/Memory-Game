@@ -114,15 +114,6 @@ function flipBack() {
     cardChk = 0;
 }
 
-function displayResult() {
-    gameOver = true;
-    if (correct == 10) {
-        alert("congrats! You've won! Your score is" + correct);
-    } else {
-        alert("You score is" + correct);
-    }
-}
-
 //4. Make new game button work
 newGame = document.getElementById("start");
 newGame.addEventListener("click", newClick);
@@ -141,18 +132,18 @@ function newBoard() {
         while (rand == images.length) {
           rand = Math.round(Math.random() * images.length);
         }
-        imgRec[i] = rand; //[4,0,7,3,12], i = 4
+        imgRec[i] = rand; //assumpition:[4,0,7,3], i = 4
       } else {
         //generate unique random values - not in imgRec array
         while (status == 0) {
-          rand = Math.round(Math.random() * images.length); //12
+          rand = Math.round(Math.random() * images.length); // 12
           if (rand !== images.length) {
-            for (var j = 0; j < imgRec.length; j++) {
+            for (let j = 0; j < imgRec.length; j++) {
               if (rand == imgRec[j]) {
-                // 3 == 12
+                // 4 == 12
                 break;
               } else if (j == imgRec.length - 1) {
-                // 3 == 3
+                // 0 == 3
                 status = 1;
                 imgRec[i] = rand;
               }
@@ -166,4 +157,53 @@ function newBoard() {
     //CALL THE TIMER
     startTimer(seconds);
   }
-  
+
+  //6. Create timer
+function startTimer(secs) {
+  timer.innerHTML = "00:" + secs; //00:00
+
+  if (secs == 0) {
+    //stop the time out and stop the function as well
+    clearTimeout(countDown);
+    setTimeout(function () {
+      displayResult();
+    }, 800);
+    timer.innerHTML = "00:00";
+    return;
+  }
+
+  secs--; //0
+  //recurring function - a function that keeps calling itself with new/updated arguments
+  countDown = setTimeout(function () { startTimer(secs);
+  }, 1000);
+}
+
+//7. Make the fancy display for results
+
+function displayResult() {
+  gameOver = true;
+
+  let width = window.innerWidth;
+  opacityD.style.display = "block";
+  result.style.display = "block";
+  result.style.left = width / 2 - 500 / 2 + "px"; //"500px"
+  result.style.top = 150 + "px";
+
+  if (correct == 10) {
+    h1Res.innerHTML = "Congratulations! You won!";
+    pRes.innerHTML = "You've scored " + correct + " points.";
+  } else {
+    h1Res.innerHTML = "You can do better : )!";
+    pRes.innerHTML = "You've scored " + correct + " points.";
+  }
+}
+
+let finalButton = document.getElementById("finalButton");
+finalButton.addEventListener("click", okayClick);
+function okayClick() {
+  result.style.display = "none";
+  opacityD.style.display = "none";
+}
+
+  //call the new board function on loading
+window.onload = newBoard();

@@ -1,13 +1,18 @@
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     user-select: none;
+    font-family: monospace;
 }
 
 body {
     background-image: url(./images/earth-from-space.jpeg);
     background-size: cover;
+    height: auto;
+    
 }
 
 h1 {
@@ -15,20 +20,26 @@ h1 {
     text-align: center;
     font-size: 90px;
     margin-top: 0;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: 3px;
     word-spacing: 7px;
     text-shadow: 3px 2px 2px rgba(255, 255, 255, 0.5);
-
+}
+p {
+    font-size: 20px;
+    color: #f2f2f2;
+    text-align: center;
 }
 
 #display {
+    font-family: monospace;
     float: right;
     font-size: 40px;
     margin: 100px 130px 100px 100px;
 }
 
 #timer {
+    
     margin: 50px;
     margin-left: 45px;
     text-align: center;
@@ -44,12 +55,15 @@ h1 {
 }
 
 #start {
-    background-color: #e6e6e6;
+    font-family: monospace;
+    background-color: rgba(153, 200, 233, 0.875);
     margin: 16px;
     font-size: 40px;
     font-weight: 500;
+    padding: 20px;
     text-shadow: 2px 2px 2px rgba(94, 119, 115, 0.82);
     border: 1px solid grey;
+    border-radius: 4px;
     box-shadow: 2px 2px 1px 0px rgba(119, 116, 115, 1);
 }
 
@@ -59,22 +73,24 @@ h1 {
 }
 
 #playarea {
+    
     float: left;
-    width: 775px;
+    width: 925px;
     height: auto;
-    margin: 10px 20px 20px 100px;
-    border: 2px solid black;
-    background-color: black;
-    box-shadow: 4px 4px 3px 0px rgba(119, 116, 128, 1);
+    margin: 30px 20px 20px 100px;
+    border-radius: 1%;
+    box-shadow: 4px 2px 8px 4px rgb(229, 226, 238);
 }
 
 .cards {
-    width: 150px;
-    height: 125px;
-    border: 1px solid black;
+    width: 180px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 2%;
     display: inline-block;
     float: left;
     margin: 2px;
+    margin-left: 3px;
     /*padding: 5px;*/
     background-color: white;
 }
@@ -86,8 +102,8 @@ h1 {
 
 .front {
     position: absolute;
-    width: 150px;
-    height: 125px;
+    width: 20%;
+    height: 150px;
     font-size: 120px;
     font-weight: bolder;
     padding: 0px 5px 50px 35px;
@@ -100,8 +116,8 @@ h1 {
 
 .back {
     position: absolute;
-    width: 150px;
-    height: 125px;
+    width: 185px;
+    height: 150px;
     padding: 5px;
     transform: rotateY(180deg);
     transition: transform 0.5s linear 0s;
@@ -109,8 +125,8 @@ h1 {
 }
 
 img {
-    width: 150px;
-    height: 105px;
+    width: 180px;
+    height: 145px;
 }
 
 #title,
@@ -168,7 +184,7 @@ img {
 
 #winFrase {
     margin: 0px 12px 12px 12px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     color: #4d0000;
 }
@@ -186,8 +202,9 @@ img {
     border-style: solid;
     border-width: 0px 2px 2px 2px;
     border-color: #511519;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+   
 }
 
 #finalButton {
@@ -209,6 +226,50 @@ img {
     cursor: pointer;
     border-radius: 5px;
     outline: none;
+}
+/* footer */
 
+footer {
+    position: relative;
+    height: 150px;
+   width: 100%;
+    margin-top: 20px;
+    float: left;
+    clear: both;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: white;
+}
+    /* Media queries */
+/* For large to medium screens sizes from 1200px wide and down */
+
+@media screen and (min-width: 1200px) {
+    }
+@media screen and (max-width:950px) {
+   
+}
+@media only screen and (max-width: 768px) {
+    #playarea{
+    
+        width: 740px;
+        height: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
 
 }
+  

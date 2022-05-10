@@ -4,12 +4,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Memory Game</title>
+		<meta name="description" content="Memory cards game">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+			</style>
+		<title>Matching Game</title>
 		<link rel="stylesheet" href="assets/index.css">
 	</head>
 	<body>
 		<header id="title">
-			<h1 id="h1">Memory Game</h1>
+			<h1 id="h1">Test your memory </h1>
+			<p>" Good luck " You will have 60 seconds to match 10 cards</p>
 		</header>
 		<div id="display">
 			<div id="timer">00:00</div>
@@ -42,11 +47,11 @@
 				<div class="front" id="front6">?</div>
 			</div>
 			<div class="cards" id="card7">
-				<div class="back" id="back7"><img src="assets/images/fish-and-chips.jpeg"></div>
+				<div class="back" id="back7"><img src="assets/images/sunset.jpg"></div>
 				<div class="front" id="front7">?</div>
 			</div>
 			<div class="cards" id="card8">
-				<div class="back" id="back8"><img src="assets/images/fish-and-chips.jpeg"></div>
+				<div class="back" id="back8"><img src="assets/images/sunset.jpg"></div>
 				<div class="front" id="front8">?</div>
 			</div>
 			<div class="cards" id="card9">
@@ -106,9 +111,27 @@
 				<p id="result">You've scored 5/10 in 60 seconds</p>
 			</div>
 			<div id="final">
-				<div id="finalButton"><button>Great!</button></div>
+				<div id="finalButton"><button>Play again!</button></div>
 			</div>
 		</div>
+		
+		<footer>
+			<ul class="social-networks">
+				<li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="visit our facebook page (opens in a new tab)">
+					<i class="fa-brands fa-facebook"></i></a>
+				</li>
+				<li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="visit our twitter page (opens in a new tab)">
+					<i class="fa-brands fa-twitter"></i></a>
+				</li>
+				<li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="visit our you tube page (opens in a new tab)">
+					<i class="fa-brands fa-youtube"></i></a>
+				</li>
+				<li><a href="https://www.instagram.com//" target="_blank" rel="noopener" aria-label="visit our instagram page (opens in a new tab)">
+					<i class="fa-brands fa-instagram-square"></i></a>
+				</li>
+			</ul>
+		</footer>
+		<script src="https://kit.fontawesome.com/cb76745ba2.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="images.js"></script>
 		<script type="text/javascript" src="index.js"></script>
 	</body>
