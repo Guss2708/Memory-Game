@@ -87,11 +87,6 @@ The live link can be found here -
 
 ## Credits
 
-- Content 
-* The idea of the game was 
-*
-*
-
 - Media
 
 * All images were gathered from Picsum
@@ -122,7 +117,7 @@ The live link can be found here -
 
 
 ## Acknowledgements
-I would like to thank my mentor Chris Quinn and my friend Ishan Sethy. The support they gave me were essencial for the development of this project. I also relied on the chat groups of the Slack community of Code Institute and lots You Tube. 
-In conclusion Javascript open my eyes despite the dificult to understand it at first, but eventually start to function in it. 
+I would like to thank my mentor Chris Quinn and my friend Ishan Sethy. The support they gave me were essencial for the development of this project. I also relied on the chat groups of the Slack community of Code Institute. 
+In conclusion Javascript open my eyes despite at first the dificult to understand it, but eventually it made sence and I start to function in it. 
 
 
